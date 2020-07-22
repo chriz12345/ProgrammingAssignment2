@@ -2,8 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
-##There are two functions where in the first we will the set the value
-## of the matrix and get the value of the matrix,in th other we will set the 
+##There are two functions makeCacheMatrix and cashesolve
+## here first we will the set the value
+## of the matrix and get the value of the matrix,in the other we will set the 
 ## value of the inverse and get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -37,5 +38,5 @@ cacheSolve <- function(x, ...) {
   mat <- x$get()
   inv <- solve(mat, ...)      ##calculates inverse values
   x$setInverse(inv)           ##To checks if the inverse is null
-  inv       ## returns the inverse value
+  inv                        ## returns the inverse value
 }
